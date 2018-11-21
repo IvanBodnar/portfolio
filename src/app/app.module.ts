@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { PersonalDataComponent } from './components/personal-data/personal-data.component';
 import { SkillsListComponent } from './components/skills-list/skills-list.component';
+import { SkillsDetailComponent } from './components/skills-detail/skills-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     PersonalDataComponent,
-    SkillsListComponent
+    SkillsListComponent,
+    SkillsDetailComponent
   ],
   imports: [
     BrowserModule,
