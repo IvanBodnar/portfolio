@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PersonalDataComponent } from './components/personal-data/personal-data.component';
 import { SkillsListComponent } from './components/skills-list/skills-list.component';
 import { SkillsDetailComponent } from './components/skills-detail/skills-detail.component';
+import { ProjectsListComponent } from './components/projects-list/projects-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SkillsDetailComponent } from './components/skills-detail/skills-detail.
     NavbarComponent,
     PersonalDataComponent,
     SkillsListComponent,
-    SkillsDetailComponent
+    SkillsDetailComponent,
+    ProjectsListComponent
   ],
   imports: [
     BrowserModule,
