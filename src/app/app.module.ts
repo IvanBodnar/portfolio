@@ -8,6 +8,7 @@ import { PersonalDataComponent } from './components/personal-data/personal-data.
 import { SkillsListComponent } from './components/skills-list/skills-list.component';
 import { SkillsDetailComponent } from './components/skills-detail/skills-detail.component';
 import { ProjectsListComponent } from './components/projects-list/projects-list.component';
+import { ProjectsDetailComponent } from './components/projects-detail/projects-detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ProjectsListComponent } from './components/projects-list/projects-list.
     PersonalDataComponent,
     SkillsListComponent,
     SkillsDetailComponent,
-    ProjectsListComponent
+    ProjectsListComponent,
+    ProjectsDetailComponent
   ],
   imports: [
     BrowserModule,
