@@ -8,7 +8,7 @@ h1 {
   max-width: none;
 }
 
-@media screen and (max-width: 991px){
+@media (max-width: 991px){
   .card-container {
     display: flex;
     align-items: center;
