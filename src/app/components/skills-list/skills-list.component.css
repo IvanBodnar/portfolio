@@ -1,4 +1,9 @@
 
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
