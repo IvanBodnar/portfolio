@@ -29,4 +29,8 @@ export default [
     title: 'Postgis',
     percentage: '70'
   },
+  {
+    title: 'Haskell',
+    percentage: '10'
+  },
 ] as  SkillModel[];
