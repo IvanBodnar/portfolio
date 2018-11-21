@@ -22,8 +22,6 @@ h1 {
 .card.text-center {
   width: 240px;
   max-height: 250px;
-  border: 3px solid #0be0ae !important;
-  background-color: transparent;
 }
 
 .fab, .fas {

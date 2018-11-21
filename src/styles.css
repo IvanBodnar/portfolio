@@ -17,3 +17,8 @@ a:visited {
   display: flex;
   justify-content: center;
 }
+
+.card-simple-style {
+  border: 3px solid #0be0ae !important;
+  background-color: transparent;
+}
