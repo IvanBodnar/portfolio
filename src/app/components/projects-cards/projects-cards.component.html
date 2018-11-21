@@ -1,10 +1,10 @@
 
 <div class="card card-simple-style card-project">
-  <img class="card-img-top" src="" alt="">
+  <img class="card-img-top" [src]="project.imgUrl" alt="">
   <div class="card-body">
-    <h5 class="card-title"></h5>
+    <h5 class="card-title">{{ project.title }}</h5>
     <p class="card-text">
-
+      {{ project.text }}
     </p>
     <a href="#" class="btn button-project">Ver Detalles</a>
   </div>
