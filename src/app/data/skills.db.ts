@@ -10,11 +10,23 @@ export default [
     percentage: '70'
   },
   {
+    title: 'TypeScript',
+    percentage: '70'
+  },
+  {
     title: 'Node',
     percentage: '70'
   },
   {
     title: 'Python',
+    percentage: '70'
+  },
+  {
+    title: 'Postgres',
+    percentage: '70'
+  },
+  {
+    title: 'Postgis',
     percentage: '70'
   },
 ] as  SkillModel[];
