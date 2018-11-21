@@ -39,3 +39,11 @@ h1 {
   cursor: pointer;
 }
 
+a:link {
+  color: #00cb9c;
+}
+
+a:visited {
+  color: #f400c6;
+}
+
