@@ -23,9 +23,16 @@
               "src/assets"
             ],
             "styles": [
+
+              "src/assets/vendor/css/blk-design-system.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/vendor/js/core/jquery.min.js",
+              "src/assets/vendor/js/core/bootstrap.min.js",
+              "src/assets/vendor/js/core/popper.min.js",
+              "src/assets/vendor/js/blk-design-system.js"
+            ]
           },
           "configurations": {
             "production": {
