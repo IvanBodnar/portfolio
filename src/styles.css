@@ -4,3 +4,11 @@
 body {
   font-family: 'Fredoka One', cursive;
 }
+
+a:link {
+  color: #00cb9c;
+}
+
+a:visited {
+  color: #f400c6;
+}
