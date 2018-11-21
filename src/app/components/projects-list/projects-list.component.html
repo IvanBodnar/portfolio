@@ -4,5 +4,5 @@
 </div>
 
 <div class="projects-container">
-  <app-projects-cards></app-projects-cards>
+  <app-projects-cards *ngFor="let projectItem of projects" [project]="projectItem"></app-projects-cards>
 </div>
