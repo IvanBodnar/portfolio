@@ -1,0 +1,11 @@
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.progress-item {
+  min-width: 500px;
+  margin: 30px;
+}
