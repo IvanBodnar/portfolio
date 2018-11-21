@@ -12,3 +12,8 @@ a:link {
 a:visited {
   color: #f400c6;
 }
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
