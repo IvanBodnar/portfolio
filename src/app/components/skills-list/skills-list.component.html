@@ -1,8 +1,4 @@
 
 <div class="skills-container">
-
-  <div class="progress-item">
-    <app-skills-detail></app-skills-detail>
-  </div>
-
+    <app-skills-detail *ngFor="let skillItem of skills" [skill]="skillItem" ></app-skills-detail>
 </div>
