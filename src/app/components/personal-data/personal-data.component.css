@@ -19,11 +19,6 @@ h1 {
   }
 }
 
-.card.text-center {
-  width: 240px;
-  max-height: 250px;
-}
-
 .fab, .fas {
   margin-right: 10px;
   font-size: large;
