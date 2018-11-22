@@ -13,6 +13,14 @@ import {ProjectsService} from '../../services/projects.service';
 export class ProjectsDetailComponent implements OnInit {
   projectId: string;
   project: ProjectModel;
+  colorClasses = [
+    'primary',
+    'info',
+    'success',
+    'danger',
+    'warning',
+    'default'
+  ];
 
   constructor(
     private route: ActivatedRoute,
@@ -24,6 +32,17 @@ export class ProjectsDetailComponent implements OnInit {
     this.project = this.projectsService.projectsArray.find(
       ( project: ProjectModel ) => project.id === this.projectId
     );
+  }
+
+  _random(max: number): number {
+    return Math.floor( Math.random() * Math.floor(max) );
+  }
+
+  // Las badges van a tener color random
+  getBadgeClasses(): string[] {
+    const colorClassesLength = this.colorClasses.length;
+    const colorClass = this.colorClasses[ this._random( colorClassesLength ) ];
+    return [ 'badge', `badge-${ colorClass }` ];
   }
 
 }
