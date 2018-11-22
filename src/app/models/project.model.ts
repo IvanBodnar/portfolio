@@ -5,6 +5,7 @@ export default class ProjectModel {
     public title: string,
     public text: string,
     public imgUrl: string,
+    public projectUrl: string,
     public explanationText: string,
     public technologiesUsed: string[]
   ) {}

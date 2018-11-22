@@ -6,6 +6,7 @@ export default [
     title: 'Geocodificador CABA',
     text: 'App para ubicar intersecciones de CABA, hecho con Angular, Node y Postgis.',
     imgUrl: 'assets/img/geocoder1.png',
+    projectUrl: 'https://www.geocodificador-caba.online/',
     explanationText: `
       Geocodificador para CABA realizado con Postgis.
     `,
