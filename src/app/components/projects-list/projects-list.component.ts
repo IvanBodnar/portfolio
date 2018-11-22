@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import ProjectModel from '../../models/project.model';
-import projectsArray from '../../data/projects.db';
+import {ProjectsService} from '../../services/projects.service';
+
 
 
 @Component({
@@ -10,10 +11,14 @@ import projectsArray from '../../data/projects.db';
   styleUrls: ['./projects-list.component.css']
 })
 export class ProjectsListComponent implements OnInit {
-  projects: ProjectModel[] = projectsArray;
+  projects: ProjectModel[];
 
-  constructor() { }
+  constructor(
+    private projectsService: ProjectsService
+  ) { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    this.projects = this.projectsService.projectsArray;
+  }
 
 }
