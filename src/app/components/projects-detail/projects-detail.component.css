@@ -2,8 +2,13 @@
 .page-header {
   min-height: 200px;
 }
+.section {
+  padding: unset;
+}
 
 .content-center {
+  display: flex;
+  justify-content: space-around;
   top: 30%;
   max-width: none;
 }
@@ -13,7 +18,7 @@
     min-height: 100px;
   }
   .section {
-    padding: unset;
+    /*padding: unset;*/
   }
   .content-center {
     top: 70%;
@@ -47,4 +52,14 @@
 p {
   text-align: justify;
   text-justify: inter-word;
+}
+
+#filling {
+  width: 40px;
+}
+
+i {
+  font-size: 28px;
+  color: #00f2c3;
+  cursor: pointer;
 }
