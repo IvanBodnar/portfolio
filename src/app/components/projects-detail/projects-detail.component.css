@@ -2,6 +2,7 @@
 .page-header {
   min-height: 200px;
 }
+
 .section {
   padding: unset;
 }
@@ -16,9 +17,6 @@
 @media (max-width: 991px) {
   .page-header {
     min-height: 100px;
-  }
-  .section {
-    /*padding: unset;*/
   }
   .content-center {
     top: 70%;
@@ -35,6 +33,9 @@
 .project-content {
   max-width: 500px;
   margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .tech-content {
@@ -58,7 +59,7 @@ p {
   width: 40px;
 }
 
-i {
+i, a {
   font-size: 28px;
   color: #00f2c3;
   cursor: pointer;
