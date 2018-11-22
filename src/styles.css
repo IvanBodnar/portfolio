@@ -24,3 +24,13 @@ a:visited {
   border: 3px solid #0be0ae !important;
   background-color: transparent;
 }
+
+.page-header {
+  min-height: 500px;
+}
+
+@media (max-width: 991px) {
+  .page-header {
+    min-height: 600px;
+  }
+}
