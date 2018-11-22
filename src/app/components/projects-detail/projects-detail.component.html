@@ -1,18 +1,25 @@
 
 <div class="page-header">
   <div class="content-center">
-    <h1></h1>
+    <h1>{{ project.title }}</h1>
   </div>
 </div>
 
 <div class="section">
+
   <div class="project-container">
     <div class="project-content">
       <p>
-
+        {{ project.explanationText }}
       </p>
     </div>
+  </div>
 
+  <div class="project-container">
+    <div class="tech-content">
+      <h2>Tecnologias usadas</h2>
+      <div class="badge badge-primary" *ngFor="let tech of project.technologiesUsed">{{ tech }}</div>
+    </div>
   </div>
 
 </div>

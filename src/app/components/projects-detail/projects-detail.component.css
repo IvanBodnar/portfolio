@@ -32,6 +32,18 @@
   margin: 50px;
 }
 
+.tech-content {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.badge {
+  max-width: 100px;
+}
+
 p {
   text-align: justify;
   text-justify: inter-word;
