@@ -6,6 +6,6 @@
     <p class="card-text">
       {{ project.text }}
     </p>
-    <a href="#" class="btn button-project">Ver Detalles</a>
+    <a [routerLink]="[ 'project/', project.id ]" class="btn button-project">Ver Detalles</a>
   </div>
 </div>
