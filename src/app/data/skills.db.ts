@@ -33,4 +33,8 @@ export default [
     title: 'Haskell',
     percentage: '10'
   },
+  {
+    title: 'SQL',
+    percentage: '70'
+  },
 ] as  SkillModel[];
