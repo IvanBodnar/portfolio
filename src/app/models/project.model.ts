@@ -4,6 +4,8 @@ export default class ProjectModel {
     public id: string,
     public title: string,
     public text: string,
-    public imgUrl: string
+    public imgUrl: string,
+    public explanationText: string,
+    public technologiesUsed: string[]
   ) {}
 }
