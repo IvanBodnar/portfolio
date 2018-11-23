@@ -24,7 +24,7 @@ export class ProjectsDetailComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private projectsService: ProjectsService
+    private projectsService: ProjectsService,
   ) { }
 
   ngOnInit() {
@@ -32,6 +32,7 @@ export class ProjectsDetailComponent implements OnInit {
     this.project = this.projectsService.projectsArray.find(
       ( project: ProjectModel ) => project.id === this.projectId
     );
+    window.scrollTo(0, 0);
   }
 
   _random(max: number): number {
