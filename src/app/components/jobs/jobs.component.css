@@ -1,0 +1,11 @@
+
+.jobs-container {
+  display: flex;
+  justify-content: center;
+}
+
+.jobs-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
