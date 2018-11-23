@@ -3,10 +3,6 @@
   min-height: 100px;
 }
 
-.section {
-  padding: unset;
-}
-
 .content-center {
   display: flex;
   justify-content: space-around;
