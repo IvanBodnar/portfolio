@@ -11,7 +11,7 @@
         <li class="nav-item active">
           <a [routerLink]="[ '' ]" class="nav-link">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li *ngIf="router.url === '/'" class="nav-item">
           <a (click)="onProjects()" class="nav-link">Proyectos</a>
         </li>
       </ul>
