@@ -21,4 +21,9 @@ export class NavbarComponent implements OnInit {
     projects.scrollIntoView({ behavior: 'smooth' });
   }
 
+  onCloseMobileMenu(): void {
+    const navBar: HTMLDivElement = this.renderer.selectRootElement('#navbarNav', true);
+    navBar.classList.remove('show');
+  }
+
 }

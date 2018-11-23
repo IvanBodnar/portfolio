@@ -2,3 +2,13 @@
 .nav-link {
   cursor: pointer;
 }
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#close-nav {
+  font-size: 20px;
+  color: #00bf9a;
+}
