@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Renderer2} from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private renderer: Renderer2
+  ) { }
 
   ngOnInit() {
+  }
+
+  onProjects() {
+    const projects: HTMLDivElement = this.renderer.selectRootElement('.card-project', true);
+    projects.scrollIntoView({ behavior: 'smooth' });
   }
 
 }
