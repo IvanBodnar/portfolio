@@ -12,6 +12,7 @@ import { ProjectsDetailComponent } from './components/projects-detail/projects-d
 import { ProjectsCardsComponent } from './components/projects-cards/projects-cards.component';
 import { HomeComponent } from './components/home/home.component';
 import { EducationComponent } from './components/education/education.component';
+import { JobsComponent } from './components/jobs/jobs.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EducationComponent } from './components/education/education.component';
     ProjectsDetailComponent,
     ProjectsCardsComponent,
     HomeComponent,
-    EducationComponent
+    EducationComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
