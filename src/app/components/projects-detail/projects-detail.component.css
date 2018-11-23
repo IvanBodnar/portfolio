@@ -1,6 +1,6 @@
 
 .page-header {
-  min-height: 200px;
+  min-height: 100px;
 }
 
 .section {
@@ -10,18 +10,8 @@
 .content-center {
   display: flex;
   justify-content: space-around;
-  top: 30%;
+  top: 70%;
   max-width: none;
-}
-
-@media (max-width: 991px) {
-  .page-header {
-    min-height: 100px;
-  }
-  .content-center {
-    top: 70%;
-    max-width: none;
-  }
 }
 
 .project-container {
