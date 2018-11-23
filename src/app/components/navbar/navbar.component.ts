@@ -1,4 +1,4 @@
-import {Component, OnInit, Renderer2} from '@angular/core';
+import {Component, HostListener, OnInit, Renderer2} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  navbarMobile: HTMLDivElement;
 
   constructor(
     private renderer: Renderer2,
@@ -14,6 +15,7 @@ export class NavbarComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.navbarMobile = this.renderer.selectRootElement('#navbarNav', true);
   }
 
   onProjects() {
@@ -21,9 +23,9 @@ export class NavbarComponent implements OnInit {
     projects.scrollIntoView({ behavior: 'smooth' });
   }
 
-  onCloseMobileMenu(): void {
-    const navBar: HTMLDivElement = this.renderer.selectRootElement('#navbarNav', true);
-    navBar.classList.remove('show');
+  @HostListener('document:click', ['$event'])
+  onDocumentClick() {
+    this.navbarMobile.classList.remove('show');
   }
 
 }
