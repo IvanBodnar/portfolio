@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.education-items {
+  text-align: left;
+}
+
 p {
   padding: 0 15px;
 }
