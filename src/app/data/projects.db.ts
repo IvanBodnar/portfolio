@@ -20,7 +20,7 @@ export default [
   {
     id: 'cards',
     title: 'Memory Cards',
-    text: 'Aplicación para estudio, utiliza tarjetas para memorizar conceptos.',
+    text: 'Aplicación para estudio, utiliza tarjetas para memorizar conceptos sobre distintos temas.',
     imgUrl: 'assets/img/cards.png',
     projectUrl: 'https://memorycards.netlify.com/',
     explanationText: `
@@ -28,6 +28,7 @@ export default [
     `,
     technologiesUsed: [
       'angular',
+      'express',
       'node',
       'mongodb'
     ]
