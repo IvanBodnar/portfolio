@@ -1,7 +1,7 @@
 
-/*.navbar {*/
-  /*background: transparent !important;*/
-/*}*/
+.navbar {
+  background-color: #00bf9a;
+}
 
 .nav-link {
   cursor: pointer;
@@ -13,6 +13,13 @@
 }
 
 #close-nav {
+  visibility: hidden;
   font-size: 20px;
   color: #00bf9a;
+}
+
+@media (max-width: 992px) {
+  #close-nav {
+    visibility: visible;
+  }
 }
