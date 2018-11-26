@@ -4,6 +4,10 @@
   margin: 30px;
 }
 
+.progress-bar {
+  background: #FF796B !important;
+}
+
 @media (min-width: 321px) and (max-width: 500px) {
   .progress-item {
     min-width: 300px;
