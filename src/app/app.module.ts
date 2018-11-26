@@ -14,6 +14,7 @@ import { HomeComponent } from './components/home/home.component';
 import { EducationComponent } from './components/education/education.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ColorScrollDirective } from './directives/color-scroll.directive';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     EducationComponent,
     JobsComponent,
-    FooterComponent
+    FooterComponent,
+    ColorScrollDirective
   ],
   imports: [
     BrowserModule,

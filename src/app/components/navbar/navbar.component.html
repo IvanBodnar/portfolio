@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top navbar-expand-lg bg-dark">
+<nav class="navbar fixed-top navbar-expand-lg" [appColorScroll]="{ defaultColor: '#00bf9a', newColor: '#FF796B' }">
   <div class="container">
     <a [routerLink]="[ '' ]" class="navbar-brand">Ivan Bodnar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +17,7 @@
               <a (click)="onProjects()" class="nav-link">Proyectos</a>
             </li>
           </ul>
-          <!--<i id="close-nav" class="fas fa-times"></i>-->
+          <i id="close-nav" class="fas fa-times"></i>
 
       </div>
 
