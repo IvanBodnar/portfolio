@@ -20,12 +20,17 @@ export class ColorScrollDirective {
 
   @HostListener('window:scroll')
   onScroll() {
-    if (window.scrollY > 200) {
+    const scroll = window.scrollY;
+    const height = document.body.clientHeight;
+    // breakPoint -> a partir de donde cambia al color nuevo
+    const breakPoint = height < 3000 ? 1500 : height > 3000 && height < 3400 ? 1800 : 2600;
+    if (scroll > 400 && scroll < breakPoint) {
       this._setColor(this.config.newColor);
+    } else if (scroll > breakPoint) {
+      this._setColor(this.config.defaultColor);
     } else {
       this._setColor(this.config.defaultColor);
     }
-
   }
 
   private _setColor(color: string): void {
