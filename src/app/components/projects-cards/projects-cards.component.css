@@ -6,5 +6,9 @@
 .button-project {
   display: block;
   top: 15px;
-  color: #0be0ae;
+  color: #FF796B;
+}
+
+.card-simple-style {
+  border-color: #FF796B !important;
 }
