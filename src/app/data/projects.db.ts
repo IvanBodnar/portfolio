@@ -8,7 +8,9 @@ export default [
     imgUrl: 'assets/img/geocoder.png',
     projectUrl: 'https://www.geocodificador-caba.online/',
     explanationText: `
-      Geocodificador para CABA realizado con Postgis.
+      Geocodificador para CABA realizado a través de funciones geográficas provistas
+      por Postgis. Actualmente pueden buscarse en la aplicación solo intersecciones,
+      pero próximamente voy a implementar también la búsqueda por altura.
     `,
     technologiesUsed: [
       'angular',
