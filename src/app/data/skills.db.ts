@@ -14,6 +14,14 @@ export default [
     percentage: '70'
   },
   {
+    title: 'HTML',
+    percentage: '60'
+  },
+  {
+    title: 'CSS',
+    percentage: '40'
+  },
+  {
     title: 'Node',
     percentage: '70'
   },
@@ -28,6 +36,14 @@ export default [
   {
     title: 'Python',
     percentage: '70'
+  },
+  {
+    title: 'Git',
+    percentage: '70'
+  },
+  {
+    title: 'GitHub',
+    percentage: '60'
   },
   {
     title: 'Django',
