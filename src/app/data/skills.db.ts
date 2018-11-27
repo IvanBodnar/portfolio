@@ -61,4 +61,16 @@ export default [
     title: 'Linux',
     percentage: '80'
   },
+  {
+    title: 'Docker',
+    percentage: '80'
+  },
+  {
+    title: 'Docker Compose',
+    percentage: '70'
+  },
+  {
+    title: 'Nginx',
+    percentage: '50'
+  },
 ] as  SkillModel[];
