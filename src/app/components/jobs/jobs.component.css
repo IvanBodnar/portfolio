@@ -26,6 +26,10 @@ span {
   }
 }
 
+p {
+  text-align: center;
+}
+
 /*Iphone 5*/
 @media screen and (max-width: 320px) {
   p {

@@ -6,8 +6,9 @@
 .content-center {
   display: flex;
   justify-content: space-around;
-  top: 70%;
+  top: 80%;
   max-width: none;
+  box-sizing: content-box;
 }
 
 .job-container {
@@ -32,7 +33,7 @@
 }
 
 .section {
-  min-height: 70vh;
+  min-height: 80vh;
 }
 
 p {
