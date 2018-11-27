@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 import ProjectModel from '../../models/project.model';
@@ -8,7 +8,8 @@ import {ProjectsService} from '../../services/projects.service';
 @Component({
   selector: 'app-projects-detail',
   templateUrl: './projects-detail.component.html',
-  styleUrls: ['./projects-detail.component.css']
+  styleUrls: ['./projects-detail.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProjectsDetailComponent implements OnInit {
   projectId: string;

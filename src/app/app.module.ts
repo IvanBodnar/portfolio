@@ -15,6 +15,7 @@ import { EducationComponent } from './components/education/education.component';
 import { JobsComponent } from './components/jobs/jobs.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ColorScrollDirective } from './directives/color-scroll.directive';
+import { JobsDetailComponent } from './components/jobs-detail/jobs-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ColorScrollDirective } from './directives/color-scroll.directive';
     EducationComponent,
     JobsComponent,
     FooterComponent,
-    ColorScrollDirective
+    ColorScrollDirective,
+    JobsDetailComponent
   ],
   imports: [
     BrowserModule,
