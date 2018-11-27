@@ -2,7 +2,9 @@
 .footer {
   left: 0;
   bottom: 0;
+  height: 80px;
   width: 100%;
+  margin-top: 100px;
   background: #00bf9a;
   padding: 30px;
   border: none;

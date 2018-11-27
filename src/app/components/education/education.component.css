@@ -19,5 +19,12 @@ p {
 }
 
 ul {
+  margin-left: 25%;
   list-style-type: none;
+}
+
+@media screen and (max-width: 700px) {
+  ul {
+    margin-left: 10%;
+  }
 }
