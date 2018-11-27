@@ -23,7 +23,7 @@ export class ColorScrollDirective {
     const scroll = window.scrollY;
     const height = document.body.clientHeight;
     // breakPoint -> a partir de donde cambia al color nuevo
-    const breakPoint = height < 850 ? 3150 : height > 850 && height < 1000 ? 1800 : 2100;
+    const breakPoint = height < 650 ? 3000 : height > 650 && height < 1000 ? 1800 : 2100;
     if (scroll > 400 && scroll < breakPoint) {
       this._setColor(this.config.newColor);
     } else if (scroll > breakPoint) {
