@@ -21,7 +21,9 @@ export default [
     title: 'Anachronics SRL',
     description: `
       En Anachronics SRL me desempeñé como desarrollador backend, programando en plpgsql
-      y SQL.
+      y SQL.\n
+      Mis tareas incluían asimismo mantener reuniones telefónicas con clientes, para acordar
+      el delineamiento de proyectosm para luego implementarlos en código. 
     `,
     competences: [
       'Desarrollo backend en general',
