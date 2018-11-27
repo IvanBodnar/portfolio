@@ -2,8 +2,29 @@
 <div class="page-header">
   <div class="content-center">
     <a [routerLink]="[ '' ]" class="fas fa-arrow-left"></a>
-    <h1>{{ project.title }}</h1>
+    <h1>{{ job.title }}</h1>
     <!--Hack!!!-->
     <div id="filling"></div>
   </div>
+</div>
+
+<div class="section">
+
+  <div class="job-container">
+    <div class="job-content">
+      <h2>Descripción</h2>
+      <p>
+        {{ job.description }}
+      </p>
+    </div>
+  </div>
+
+  <div class="project-container">
+    <div class="skills-content">
+      <h2>Tareas</h2>
+      <div *ngFor="let competence of job.competences"> <p>{{ competence }}</p></div>
+    </div>
+  </div>
+
+
 </div>

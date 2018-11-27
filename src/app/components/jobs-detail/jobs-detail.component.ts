@@ -20,7 +20,7 @@ export class JobsDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.jobId = this.route.snapshot.params.jobsId;
+    this.jobId = this.route.snapshot.params.jobId;
     this.job = this.jobsService.jobsArray.find(
       ( job: JobModel ) => job.id === this.jobId
     );
