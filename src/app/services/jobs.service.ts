@@ -5,7 +5,7 @@ import jobsArrayEs from '../data/jobs.db';
 import jobsArrayEn from '../data/jobs.en.db';
 import {TranslationService} from './translation.service';
 import Languages from '../models/language.enum';
-import {BehaviorSubject, Observable, of} from 'rxjs';
+import {BehaviorSubject} from 'rxjs';
 
 
 @Injectable({
@@ -14,7 +14,7 @@ import {BehaviorSubject, Observable, of} from 'rxjs';
 export class JobsService {
   language: Languages;
   private _jobsArraySubject = new BehaviorSubject<JobModel[]>(null);
-  jobsArray = this._jobsArraySubject.asObservable();
+  jobsArray$ = this._jobsArraySubject.asObservable();
 
   constructor(
     private translationService: TranslationService
