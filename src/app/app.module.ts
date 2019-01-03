@@ -17,6 +17,7 @@ import { JobsComponent } from './components/jobs/jobs.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ColorScrollDirective } from './directives/color-scroll.directive';
 import { JobsDetailComponent } from './components/jobs-detail/jobs-detail.component';
+import { HtmlTranslationPipe } from './pipes/html-translation.pipe';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { JobsDetailComponent } from './components/jobs-detail/jobs-detail.compon
     JobsComponent,
     FooterComponent,
     ColorScrollDirective,
-    JobsDetailComponent
+    JobsDetailComponent,
+    HtmlTranslationPipe
   ],
   imports: [
     BrowserModule,
