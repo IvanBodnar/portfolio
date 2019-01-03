@@ -18,7 +18,11 @@ export class ProjectsListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.projects = this.projectsService.projectsArray;
+    this.projectsService.projectsArray$
+      .subscribe(
+        projects => this.projects = projects,
+        err => console.log(err)
+      );
   }
 
 }
