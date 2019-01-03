@@ -45,5 +45,19 @@ export default [
       'mongodb',
       'docker'
     ]
+  },
+  {
+    id: 'favogit',
+    title: 'FavoGit',
+    text: 'App to visualize GitHub profiles.',
+    imgUrl: 'assets/img/favogit.png',
+    projectUrl: 'https://favogit.netlify.com/',
+    explanationText: `
+      This app is able to search GitHub profiles, sort them in ascending or descending order,
+      and store them as favorites.
+    `,
+    technologiesUsed: [
+      'angular'
+    ]
   }
 ] as ProjectModel[];
