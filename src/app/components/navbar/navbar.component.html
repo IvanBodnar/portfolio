@@ -1,6 +1,12 @@
 <nav class="navbar fixed-top navbar-expand-lg" [appColorScroll]="{ defaultColor: '#00bf9a', newColor: '#FF796B' }">
   <div class="container">
     <a [routerLink]="[ '' ]" class="navbar-brand">Ivan Bodnar</a>
+
+    <select (change)="onSelectLang( $event )" id="language" class="form-control select">
+      <option>Español</option>
+      <option>English</option>
+    </select>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-bar navbar-kebab"></span>
       <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -22,6 +28,11 @@
       </div>
 
 
+
     </div>
+
+
   </div>
+
+
 </nav>

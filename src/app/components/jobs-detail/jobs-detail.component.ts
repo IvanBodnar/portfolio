@@ -3,6 +3,7 @@ import {ActivatedRoute} from '@angular/router';
 
 import {JobsService} from '../../services/jobs.service';
 import JobModel from '../../models/job.model';
+import {filter, map} from 'rxjs/operators';
 
 
 @Component({
@@ -21,9 +22,13 @@ export class JobsDetailComponent implements OnInit {
 
   ngOnInit() {
     this.jobId = this.route.snapshot.params.jobId;
-    this.job = this.jobsService.jobsArray.find(
-      ( job: JobModel ) => job.id === this.jobId
-    );
+    this.jobsService.jobsArray$
+      .pipe(
+        map( jobs => jobs.find( job => job.id === this.jobId ) )
+      )
+      .subscribe(
+        job => this.job = job
+      );
     window.scrollTo(0, 0);
   }
 

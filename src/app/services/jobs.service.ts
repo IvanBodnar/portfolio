@@ -1,13 +1,36 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
+
 import JobModel from '../models/job.model';
-import jobsArray from '../data/jobs.db';
+import jobsArrayEs from '../data/jobs.db';
+import jobsArrayEn from '../data/jobs.en.db';
+import {TranslationService} from './translation.service';
+import Languages from '../models/language.enum';
+import {BehaviorSubject} from 'rxjs';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class JobsService {
-  jobsArray: JobModel[] = jobsArray;
+  language: Languages;
+  private _jobsArraySubject = new BehaviorSubject<JobModel[]>(null);
+  jobsArray$ = this._jobsArraySubject.asObservable();
 
-  constructor() { }
+  constructor(
+    private translationService: TranslationService
+  ) {
+    this.translationService.language$
+      .subscribe(
+        ( lang: Languages ) => {
+          if (lang === Languages.es) {
+            this._jobsArraySubject.next( jobsArrayEs );
+          } else if (lang === Languages.en) {
+            this._jobsArraySubject.next( jobsArrayEn );
+          } else {
+            console.log('Lenguaje no Contemplado');
+          }
+        },
+        err => console.log(err)
+      );
+  }
 }
