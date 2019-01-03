@@ -2,16 +2,22 @@
 
 <div class="jobs-container">
 
-  <h2>Experiencia Laboral</h2>
+  <h2>{{ 'Experiencia Laboral' | htmlTranslation | async }}</h2>
 
   <div class="jobs-item">
-    <p>2012 - 2017: Observatorio de Seguridad Vial CABA</p>
-    <a [routerLink]="['job/', 'observatorio']"><span class="badge badge-success badge-jobs">Ver Detalles</span></a>
+    <p>2012 - 2017: {{ 'Observatorio de Seguridad Vial CABA' | htmlTranslation | async }}</p>
+    <a
+      [routerLink]="['job/', 'observatorio']"
+    ><span class="badge badge-success badge-jobs">{{ 'Ver Detalles' | htmlTranslation | async }}</span></a>
   </div>
 
   <div class="jobs-item">
-    <p>Noviembre 2017 - Agosto 2018: Anachronics SRL</p>
-    <a [routerLink]="['job/', 'anachronics']"><span class="badge badge-success badge-jobs">Ver Detalles</span></a>
+    <p>
+      {{ 'Noviembre' | htmlTranslation | async }} 2017 - {{ 'Agosto' | htmlTranslation | async }} 2018: Anachronics SRL
+    </p>
+    <a
+      [routerLink]="['job/', 'anachronics']"
+    ><span class="badge badge-success badge-jobs">{{ 'Ver Detalles' | htmlTranslation | async }}</span></a>
   </div>
 
 </div>

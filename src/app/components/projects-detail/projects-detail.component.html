@@ -12,7 +12,7 @@
 
   <div class="project-container">
     <div class="project-content">
-      <h2>Descripción</h2>
+      <h2>{{ 'Descripción' | htmlTranslation | async }}</h2>
       <p>
         {{ project.explanationText }}
       </p>
@@ -21,14 +21,14 @@
 
   <div class="project-container">
     <div class="tech-content">
-      <h2>Tecnologias usadas</h2>
+      <h2>{{ 'Tecnologias usadas' | htmlTranslation | async }}</h2>
       <div [ngClass]="getBadgeClasses()" *ngFor="let tech of project.technologiesUsed">{{ tech }}</div>
     </div>
   </div>
 
   <div class="project-container">
     <div class="project-content">
-      <h2>Ver proyecto</h2>
+      <h2>{{ 'Ver proyecto Online' | htmlTranslation | async }}</h2>
       <a [href]="project.projectUrl" class="fas fa-external-link-alt" target="_blank"></a>
     </div>
   </div>
