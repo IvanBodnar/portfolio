@@ -10,6 +10,7 @@
 .nav-container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 #close-nav {
@@ -21,7 +22,8 @@
 
 #language {
   max-width: 100px;
-  float: right;
+  color: white;
+  font-weight: bold;
 }
 
 option {
@@ -31,5 +33,11 @@ option {
 @media (max-width: 992px) {
   #close-nav {
     visibility: visible;
+    align-self: flex-start;
   }
+
+  #language {
+    margin-right: 120px;
+  }
+
 }
