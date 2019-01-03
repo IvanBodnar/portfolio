@@ -30,10 +30,10 @@ export default [
     projectUrl: 'https://memorycards.netlify.com/',
     explanationText: `
       On this app theme grouped cards can be created, so then can be memorized by sifting
-      through them. Cards have a front, where a question can be specified, and a backside 
+      through them. Cards have a front, where a question can be specified, and a backside
       where the answer can be written. There's also the chance to indicate the system if
       the user answered correctly or not, data that is used by the backend to reorder the cards according
-      the number of times that each question was correctly answered. This way, the system shows more frequently 
+      the number of times that each question was correctly answered. This way, the system shows more frequently
       the less correctly answered quesions.\n
       The Database and backend deployment are made through Docker, while the frontend
       is hosted on Netlify.
