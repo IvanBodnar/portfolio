@@ -6,29 +6,29 @@ export default [
     id: 'observatorio',
     title: 'Transit Safety Observatory - CABA',
     description: `
-      On the Transit Safety Observatory me desempeñé como administrador de
-      bases de datos (Postgres), desarrollador y analista de datos geográficos. Desarrollé varias
-      aplicaciones, tanto de escritorio como web, usando PyQt y Django.
+      On the Transit Safety Observatory I worked as Database administrator
+      (Postgres), developer and geographic data analyst. I developed multiple
+      applications, web and desktop, using PyQt and Django.
     `,
     competences: [
-      'Mantenimiento de bases de datos',
-      'Procesamiento de datos',
-      'Tareas de geoprocesamiento con Postgis, Arcgis y Qgis'
+      'Database maintenance',
+      'Data process and cleaning',
+      'Geoprocessing tasks with Postgis, Arcgis and Qgis'
     ]
   },
   {
     id: 'anachronics',
     title: 'Anachronics SRL',
     description: `
-      En Anachronics SRL me desempeñé como desarrollador backend, programando en plpgsql
-      y SQL.\n
-      Mis tareas incluían asimismo mantener reuniones telefónicas con clientes, para acordar
-      el delineamiento de proyectosm para luego implementarlos en código. 
+      In Anachronics SRL I worked as backend developer, using plpgsql
+      and SQL.\n
+      My tasks included also to have phone meetings with clients, to agree
+      about the delineation of different projects, so can be then translated into code.
     `,
     competences: [
-      'Desarrollo backend en general',
-      'Delineamiento de proyectos con clientes',
-      'Desarrollo de features requeridas por el cliente'
+      'Backend development',
+      'Project delineation with clients',
+      'Client required features development'
     ]
   }
 ] as JobModel[];
