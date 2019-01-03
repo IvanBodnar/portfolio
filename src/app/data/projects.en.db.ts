@@ -34,7 +34,7 @@ export default [
       where the answer can be written. There's also the chance to indicate the system if
       the user answered correctly or not, data that is used by the backend to reorder the cards according
       the number of times that each question was correctly answered. This way, the system shows more frequently
-      the less correctly answered quesions.\n
+      the questions that have been answered incorrectly a greater number of times.\n
       The Database and backend deployment are made through Docker, while the frontend
       is hosted on Netlify.
     `,

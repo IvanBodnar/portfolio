@@ -4,7 +4,7 @@
       <div class="col-lg-3"></div>
       <div class="col-lg-6 col-md-12 col-sm-12">
           <h1>Ivan Bodnar</h1>
-          <h2>desarrollador</h2>
+          <h2>{{ 'desarrollador' | htmlTranslation | async }}</h2>
       </div>
       <div class="card-container col-lg-3 col-md-12 col-sm-12">
         <div class="card text-center card-simple-style">
@@ -15,7 +15,7 @@
             </div>
             <div class="data">
               <i class="fas fa-calendar"></i>
-              <p>39 años</p>
+              <p>39 {{ 'años' | htmlTranslation | async }}</p>
             </div>
             <div class="data">
               <i class="fas fa-phone"></i>
