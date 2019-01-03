@@ -1,8 +1,9 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 import ProjectModel from '../../models/project.model';
 import {ProjectsService} from '../../services/projects.service';
+import {map} from 'rxjs/operators';
 
 
 @Component({
@@ -26,13 +27,24 @@ export class ProjectsDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private projectsService: ProjectsService,
+    private changeDetector: ChangeDetectorRef
   ) { }
 
   ngOnInit() {
     this.projectId = this.route.snapshot.params.projectId;
-    this.project = this.projectsService.projectsArray.find(
-      ( project: ProjectModel ) => project.id === this.projectId
-    );
+    this.projectsService.projectsArray$
+      .pipe(
+        map( projects => projects.find( project => project.id === this.projectId ) )
+      )
+      .subscribe(
+        project => {
+          this.project = project;
+          // Se marca para check porque si no no detecta el
+          // cambio -> está en ChangeDetectionStrategy.OnPush
+          // por el tema de las clases random de las tags de skills
+          this.changeDetector.markForCheck();
+        }
+      );
     window.scrollTo(0, 0);
   }
 
