@@ -59,5 +59,19 @@ export default [
     technologiesUsed: [
       'angular'
     ]
+  },
+  {
+    id: 'randuser',
+    title: 'RandUser',
+    text: 'Simple aplicación para visualización de perfiles de de la api Random User.',
+    imgUrl: 'assets/img/randuser.png',
+    projectUrl: 'https://randuser.netlify.com/',
+    explanationText: `
+      Esta app trae 20 perfiles de Random User. Pueden filtrarse por nombre o apellido,
+      y verse detalles del perfil.
+    `,
+    technologiesUsed: [
+      'angular'
+    ]
   }
 ] as ProjectModel[];
