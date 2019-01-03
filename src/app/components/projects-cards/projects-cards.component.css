@@ -12,3 +12,10 @@
 .card-simple-style {
   border-color: #FF796B !important;
 }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
